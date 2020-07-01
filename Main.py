@@ -11,13 +11,15 @@ def main():
     dataset_content = list()
     cols = None
 
-    # Found this to be faster than use pd.concat every line
+    # Way faster than use pd.concat every line
+    # Tricky needing me to sort the dict ;)
 
     with open('Data/transactions.txt', 'r') as file:
         lines = file.readlines()
 
         for line in tqdm(lines):
             temp_dict = json.loads(line)
+            temp_dict = dict(sorted(temp_dict.items()))
 
             if cols is None: cols = list(temp_dict.keys())
             values = list(temp_dict.values())
