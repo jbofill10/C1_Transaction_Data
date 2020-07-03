@@ -23,7 +23,13 @@ def main():
 
             if cols is None: cols = list(temp_dict.keys())
             values = list(temp_dict.values())
-            values = [np.nan if isinstance(x, str) and len(x) == 0 else x for x in values]
+            for i in range(len(values)):
+
+                if isinstance(values[i], str) and len(values[i]) == 0:
+                    values[i] = np.nan
+                elif isinstance(values[i], str):
+                    values[i] = values[i].strip()
+
             dataset_content.append(values)
 
     df = pd.DataFrame(dataset_content, columns=cols)
