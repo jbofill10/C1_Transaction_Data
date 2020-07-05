@@ -42,10 +42,10 @@ def main():
     df_3 = df.iloc[df_in_4*2:df_in_4*3]
     df_4 = df.iloc[df_in_4*3:df_in_4*4 + (len(df) - df_in_4*4)]
 
-    pd.to_pickle(df_1, 'Data/pickles/full_data/df_1')
-    pd.to_pickle(df_2, 'Data/pickles/full_data/df_2')
-    pd.to_pickle(df_3, 'Data/pickles/full_data/df_3')
-    pd.to_pickle(df_4, 'Data/pickles/full_data/df_4')
+    pd.to_pickle(df_1, 'Data/pickles/full_data/df_1', protocol=4)
+    pd.to_pickle(df_2, 'Data/pickles/full_data/df_2', protocol=4)
+    pd.to_pickle(df_3, 'Data/pickles/full_data/df_3', protocol=4)
+    pd.to_pickle(df_4, 'Data/pickles/full_data/df_4', protocol=4)
 
 
 if __name__ == '__main__':
