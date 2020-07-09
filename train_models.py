@@ -1,8 +1,24 @@
 import pickle
-from machine_learning import decision_tree
+from machine_learning import decision_tree, logistic_reg, random_forest, svm, xgboost
+
 
 def train():
-    with open('Data/pickles/preprocessed_data/preproc_data') as file:
+
+    with open('Data/pickles/preprocessed_data/preproc_data', 'rb') as file:
         data = pickle.load(file)
 
-    decision_tree.run(data)
+    results = {
+        'dec_tree': decision_tree.run(data),
+        'log_reg': logistic_reg.run(data),
+        'rf': random_forest.run(data),
+        'svm': svm.run(data),
+        'xgboost': xgboost.run(data),
+    }
+
+
+    print(results)
+
+
+
+if __name__ == '__main__':
+    train()
