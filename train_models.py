@@ -4,7 +4,7 @@ from machine_learning import decision_tree, logistic_reg, random_forest, svm, xg
 
 def train():
 
-    with open('Data/pickles/preprocessed_data/preproc_data', 'rb') as file:
+    with open('Data/pickles/preproc_data', 'rb') as file:
         data = pickle.load(file)
 
     results = {

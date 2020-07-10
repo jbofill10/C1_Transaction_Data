@@ -33,19 +33,8 @@ def main():
             dataset_content.append(values)
 
     df = pd.DataFrame(dataset_content, columns=cols)
-    df_in_4 = len(df)//4
 
-    # must be my way so I can use pickles with git
-
-    df_1 = df.iloc[0:df_in_4]
-    df_2 = df.iloc[df_in_4:df_in_4*2]
-    df_3 = df.iloc[df_in_4*2:df_in_4*3]
-    df_4 = df.iloc[df_in_4*3:df_in_4*4 + (len(df) - df_in_4*4)]
-
-    pd.to_pickle(df_1, 'Data/pickles/full_data/df_1', protocol=4)
-    pd.to_pickle(df_2, 'Data/pickles/full_data/df_2', protocol=4)
-    pd.to_pickle(df_3, 'Data/pickles/full_data/df_3', protocol=4)
-    pd.to_pickle(df_4, 'Data/pickles/full_data/df_4', protocol=4)
+    pd.to_pickle(df, 'Data/pickles/dataset', protocol=4)
 
 
 if __name__ == '__main__':
