@@ -1,9 +1,22 @@
-# Capital One Data Science Challenge
+My findings from the [Capital One Data Science Challenge](https://github.com/CapitalOneRecruiting/DS)
 
-This repository contains synthetic data for the [Capital One](https://www.capitalone.com) Data Scientist Recruiting process.  If you're aready in our recruiting process, great! Please see below.
+## Different files
+[Main.py](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Main.py)
+- Script that parses messy text file into dataframe  
 
-If you've come across this repository on your own, feel free to take a look at the data.  If you think you'd be interested in helping us analyze data, whether it is the kind attached or anything else, we're hiring!  We encourage you to check out our opportunities at https://www.capitalonecareers.com/ and share any insights you find with one of our recruiters.
+[DataCleaning.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/DataCleaning.ipynb)
+- Examines data for any missing values
 
+[Visualizations.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Visualizations.ipynb)
+- Looks for interesting discovers in the dataset 
+- Gathers a better understanding of the data  
 
-## Instructions for Candidates:
-`transactions.zip` contains the data necessary to complete the Data Science Challenge.  Please do not include this data with your submission.
+[Preprocessing.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Preprocessing.ipynb)
+- Prepares data for different modeling applications
+- Adds in some custom features
+
+[ModelResults.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/ModelResults.ipynb)
+- Shows results from classification models
+
+[ClusteringResults.ipynb]()
+- Shows discoveries found using clustering techniques
