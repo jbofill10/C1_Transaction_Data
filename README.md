@@ -18,5 +18,5 @@ My findings from the [Capital One Data Science Challenge](https://github.com/Cap
 [ModelResults.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/ModelResults.ipynb)
 - Shows results from classification models
 
-[ClusteringResults.ipynb]()
+[ClusteringResults.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/ClusteringResults.ipynb)
 - Shows discoveries found using clustering techniques
