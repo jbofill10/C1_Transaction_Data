@@ -1,6 +1,6 @@
 My findings from the [Capital One Data Science Challenge](https://github.com/CapitalOneRecruiting/DS)
 
-## Different files
+## Important files
 [Main.py](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Main.py)
 - Script that parses messy text file into dataframe  
 
