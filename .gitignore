@@ -2,6 +2,8 @@
 temp-plot*.html
 Data/transactions.txt
 .idea
+Data/pickles/clustered_df
+Data/pickles/clustering_data
 .ipynb_checkpoints
 # Byte-compiled / optimized / DLL files
 __pycache__/
