@@ -6,7 +6,8 @@ import pandas as pd
 def run():
 
     df = pd.read_pickle('../Data/pickles/clustering_data')
-
+    acc_num = df['accountNumber']
+    df.drop(['accountNumber'], axis=1, inplace=True)
     # print(df)
     #
     # scores = {'clusters': [], 'scores': []}
@@ -23,7 +24,7 @@ def run():
     cluster_labels = [f'cluster_{i}' for i in kmeans.fit(df).labels_]
 
     df['cluster'] = cluster_labels
-
+    df['accountNumber'] = acc_num
     df.to_pickle('../Data/pickles/clustered_df', protocol=4)
 
     print(df)

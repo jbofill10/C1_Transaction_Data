@@ -1,13 +1,14 @@
 .vscode
 temp-plot*.html
 .idea
-Data
+Data/*
 .ipynb_checkpoints
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
+Data/pickles/clean_data
+Data/pickles/dataset
 # C extensions
 *.so
 
