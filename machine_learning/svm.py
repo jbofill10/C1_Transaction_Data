@@ -7,9 +7,9 @@ import os, pickle
 def run(data):
     if not os.path.isfile('Data/pickles/model_results/svc'):
         params = {
-            'C': [0.001, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 20, 50, 70, 100],
+            'C': [0.01, 0.05, 0.1, 0.5, 1, 5, 10, 20, 50, 70, 100],
             'gamma': ['scale', 'auto'],
-            'kernel': ['rbf', 'poly', 'sigmoid'],
+            'kernel': ['poly', 'rbf'],
             'degree': [1, 2, 3, 4, 5]
         }
 
