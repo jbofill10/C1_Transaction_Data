@@ -2,7 +2,7 @@ My findings from the [Capital One Data Science Challenge](https://github.com/Cap
 
 ## Important files
 [Main.py](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Main.py)
-- Script that parses messy text file into dataframe  
+- Script that parses text file into dataframe  
 
 [DataCleaning.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/DataCleaning.ipynb)
 - Examines data for any missing values
