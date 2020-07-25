@@ -13,7 +13,7 @@ def run(data):
             'degree': [1, 2, 3, 4, 5]
         }
 
-        grid = GridSearchCV(estimator=SVC(), param_grid=params, cv=5, verbose=3)
+        grid = GridSearchCV(estimator=SVC(probability=True), param_grid=params, cv=5, verbose=3)
 
         grid.fit(data['x_train'], data['y_train'])
 

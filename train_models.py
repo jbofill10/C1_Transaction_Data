@@ -16,7 +16,7 @@ def train():
     }
 
     with open('Data/pickles/result_dict', 'wb') as file:
-        pickle.dump(results, file)
+        pickle.dump(results, file, protocol=4)
 
     print(results)
 
