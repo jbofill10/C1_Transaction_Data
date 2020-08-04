@@ -2,21 +2,21 @@ My findings from the [Capital One Data Science Challenge](https://github.com/Cap
 
 ## Important files
 [Main.py](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Main.py)
-- Script that parses text file into dataframe  
+- Script that parses text file into dataframe
 
 [DataCleaning.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/DataCleaning.ipynb)
 - Examines data for any missing values
 
 [Visualizations.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Visualizations.ipynb)
-- Looks for interesting discovers in the dataset 
-- Gathers a better understanding of the data  
+- Looks for interesting discoveries in the dataset 
+- Geting a better understanding of the data  
 
 [Preprocessing.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/Preprocessing.ipynb)
-- Prepares data for different modeling applications
+- Prepares data for different modeling approaches
 - Adds in some custom features
 
 [ModelResults.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/ModelResults.ipynb)
 - Shows results from classification models
 
 [ClusteringResults.ipynb](https://github.com/jbofill10/C1_Transaction_Data/blob/master/ClusteringResults.ipynb)
-- Shows discoveries found using clustering techniques
+- Shows discoveries found using Kmeans
